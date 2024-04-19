@@ -22,10 +22,16 @@ public class SpiralMetrix {
         }
         // bottom
         for(int j = endcol-1 ; j >= startcol ; j--){
+            if(startcol == endcol){
+                break;
+            }
             System.out.print(matrix[endrow][j] + " ");
         }
         // left
         for (int i = endrow-1 ; i >= startrow+1 ; i--){
+            if(startrow == endrow){
+                break;
+            }
             System.out.print(matrix[i][startcol] + " ");
         }
 
@@ -47,7 +53,8 @@ public class SpiralMetrix {
         int matrix [][] = {{1 , 2, 3, 4},
                             {5 , 6, 7, 8},
                             {9 , 10, 11, 12},
-                            {13, 14, 15, 16}};
+                            {13, 14, 15, 16},
+                            {17 , 18, 19 , 20}};
         sspiral(matrix);
         
     }
