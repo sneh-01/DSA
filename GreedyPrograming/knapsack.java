@@ -1,4 +1,4 @@
-package Dynamicprograming;
+package GreedyPrograming;
 
 import java.util.Comparator;
 import java.util.*;
